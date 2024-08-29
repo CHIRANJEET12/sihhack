@@ -1,0 +1,35 @@
+#hero-section {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#heroCarousel {
+    max-width: 80%; /* Limit the carousel width */
+    margin: 0 auto; /* Center the carousel */
+}
+
+.hero-img {
+    height: 500px; /* Set a fixed height for images */
+    object-fit: cover; /* Ensure the image covers the area without stretching */
+}
+
+.hero-img {
+    height: 500px; /* Set a fixed height for images */
+    object-fit: cover; /* Ensure the image covers the area without stretching */
+    position: relative;
+}
+
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0));
+    z-index: 1;
+}
+
+.carousel-caption {
+    z-index: 2; /* Ensure captions appear above the gradient */
+}
